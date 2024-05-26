@@ -1,0 +1,23 @@
+int i = 0;
+void setup() {
+  pinMode(6,OUTPUT) ;
+
+}
+
+void loop() 
+{
+  analogWrite(6, i) ;
+  i = i + 1 ;
+  delay(50) ;
+  if (i > 256) 
+  i = 0 ;
+  
+
+
+}
+/*
+   0. ---> 0v
+   255 ---> 5v
+   128 ---> 2.5v
+   64 ---> 1.25v
+*/
